@@ -1,0 +1,70 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    body main .left,body main .center,body main .right {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: calc();
+        height: 100%;
+    }
+    main img {
+        width: 25%;
+    }
+}
+
+main img {
+    border-radius: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+main .left,main .center,main .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: calc();
+    height: 100vh;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+main .left,main .right {
+    background-color: #7398c4;
+}
+
+main .center {
+    background-color: #c4d7e7;
+}
+
+.info,.infoPerfil,.infoSkills,.infoProyectos,.infoLogros,.infoIdiomas,.infoEstudios,.infoExperiencia {
+    padding-top: 2%;
+}
+
+.perfil,.proyectos,.logros,.estudios,.experiencia {
+    padding-top: 5%;
+}
